@@ -32,4 +32,4 @@ jobs:
         MONGO_DB_URI: ${{ secrets.MONGO_DB_URI }}
         OWNER_ID: ${{ secrets.OWNER_ID }}
       run: |
-        python EsproChat
+        python -m EsproChat 
