@@ -1,4 +1,4 @@
-name: Espro
+name: Espro Music Bot
 
 on:
   push:
@@ -28,8 +28,8 @@ jobs:
         API_ID: ${{ secrets.API_ID }}
         API_HASH: ${{ secrets.API_HASH }}
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        LOGGER_ID: ${{ secrets.LOGGER_ID }}
         MONGO_DB_URI: ${{ secrets.MONGO_DB_URI }}
         OWNER_ID: ${{ secrets.OWNER_ID }}
-        
       run: |
-        python Esprochat
+        python EsproChat
